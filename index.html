@@ -111,7 +111,9 @@
     .hero-price-val { font-family: var(--sans); font-size: .82rem; font-weight: 500; color: var(--ocean); letter-spacing: .05em; }
     .hero-cta {
       opacity: 0; animation: fadeUp .8s .9s forwards;
+      display: flex; flex-wrap: wrap; gap: 12px;
     }
+    .btn-outline { margin-left: 0; }
     .btn-primary {
       font-family: var(--sans); font-size: .74rem; font-weight: 500;
       letter-spacing: .14em; text-transform: uppercase;
@@ -370,6 +372,8 @@
       section { padding: 64px 0; }
       .container { padding: 0 24px; }
       .form-row { grid-template-columns: 1fr; }
+      .hero-cta { flex-direction: column; }
+      .btn-primary, .btn-outline { width: 100%; text-align: center; }
       .community-features { grid-template-columns: 1fr; }
       .feat-item:nth-child(odd) { border-right: none; padding-right: 0; }
       .feat-item:nth-child(even) { padding-left: 0; }
@@ -599,7 +603,7 @@
           <p class="agent-name">Bryan Raydon</p>
           <div class="agent-contact">
             <a href="tel:+15304486530" class="agent-link">+1 (530) 448-6530</a>
-            <a href="/cdn-cgi/l/email-protection#d4b6a6adb5baa694a6bdb7b5a6b0bbb5b9bdb3bbfab7bbb9" class="agent-link"><span class="__cf_email__" data-cfemail="4b2939322a25390b3922282a392f242a26222c2465282426">[email&#160;protected]</span></a>
+            <a href="mailto:bryanr@ricardoamigo.com" class="agent-link">bryanr@ricardoamigo.com</a>
             <a href="https://wa.me/15304486530" target="_blank" class="agent-link">WhatsApp Bryan →</a>
           </div>
         </div>
