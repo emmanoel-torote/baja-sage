@@ -603,7 +603,7 @@
           <p class="agent-name">Richard Friend</p>
           <div class="agent-contact">
             <a href="tel:+15304486530" class="agent-link">+1 (530) 448-6530</a>
-            <a href="mailto:bryanr@ricardoamigo.com" class="agent-link">bryanr@ricardoamigo.com</a>
+            <a href="mailto:info@ricardoamigo.com" class="agent-link">bryanr@ricardoamigo.com</a>
             <a href="https://wa.me/15304486530" target="_blank" class="agent-link">WhatsApp RARE →</a>
           </div>
         </div>
@@ -696,7 +696,7 @@
     e.preventDefault();
     const d = new FormData(this);
     const body = `New Baja Sage Hideaway inquiry\n\nName: ${d.get('fname')} ${d.get('lname')}\nEmail: ${d.get('email')}\nPhone: ${d.get('phone')||'—'}\nProperty: ${d.get('propSelect')||'Not specified'}\nTimeline: ${d.get('timeline')||'—'}\nMessage: ${d.get('message')||'—'}\n\n— Sent via Baja Sage Hideaway Landing Page`;
-    window.location.href = `mailto:bryanr@ricardoamigo.com?cc=info@ricardoamigo.com&subject=Baja Sage Inquiry — ${d.get('fname')} ${d.get('lname')}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@ricardoamigo.com?cc=info@ricardoamigo.com&subject=Baja Sage Inquiry — ${d.get('fname')} ${d.get('lname')}&body=${encodeURIComponent(body)}`;
     this.style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
   });
